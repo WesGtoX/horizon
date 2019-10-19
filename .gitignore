@@ -1,3 +1,7 @@
+
+# Created by https://www.gitignore.io/api/python,django,pycharm,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=python,django,pycharm,visualstudiocode
+
 ### Django ###
 *.log
 *.pot
@@ -34,6 +38,10 @@ parts/
 sdist/
 var/
 wheels/
+venv/
+.venv/
+env/
+.env/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
@@ -115,18 +123,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-### OpenCV ###
-#OpenCV for Mac and Linux
-#build and release folders
-*/CMakeFiles
-*/CMakeCache.txt
-*/Makefile
-*/cmake_install.cmake
-.DS_Store
-
-### PyCharm+all ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+### PyCharm ###
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -146,6 +143,7 @@ dmypy.json
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+.idea/*
 
 # Gradle
 .idea/**/gradle.xml
@@ -194,24 +192,26 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### PyCharm+all Patch ###
-# Ignores the whole .idea folder and all .iml files
-# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
+### PyCharm Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-.idea/
-
-# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
-
-*.iml
-modules.xml
-.idea/misc.xml
-*.ipr
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+.idea/**/sonarlint/
+
+# SonarQube Plugin
+.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator/
 
 ### VisualStudioCode ###
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
