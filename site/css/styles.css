@@ -1,0 +1,9 @@
+#mainNav{
+    background-color: aquamarine;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link{
+    color: black;
+}
+
+##mainNav .navbar-nav .nav-item.active .nav-link
